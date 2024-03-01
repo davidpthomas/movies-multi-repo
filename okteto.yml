@@ -4,4 +4,4 @@ dependencies:
 
 deploy:
   - name: Deploy MongoDB
-    command:  helm upgrade --install mongodb mongodb-12.1.30.tgz -f values.yml
+    command:  helm upgrade --install mongodb oci://registry-1.docker.io/bitnamicharts/mongodb -f values.yml --version 13.18.5
