@@ -1,6 +1,12 @@
 dependencies:
-  - https://github.com/okteto/movies-frontend
-  - https://github.com/okteto/movies-api
+  frontend:
+    repository: https://github.com/davidpthomas/movies-frontend
+    manifest: okteto.yaml
+    branch: test-broken-dep
+  api:
+    repository: https://github.com/davidpthomas/movies-api
+    manifest: okteto.yaml
+    branch: test-broken-dep
 
 deploy:
   - name: Deploy MongoDB
