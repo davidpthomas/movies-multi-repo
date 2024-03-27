@@ -1,11 +1,11 @@
 dependencies:
   frontend:
     repository: https://github.com/davidpthomas/movies-frontend
-    manifest: okteto.yaml
+    manifest: okteto.yml
     branch: test-broken-dep
   api:
     repository: https://github.com/davidpthomas/movies-api
-    manifest: okteto.yaml
+    manifest: okteto.yml
     branch: test-broken-dep
 
 deploy:
